@@ -355,7 +355,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -371,6 +373,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-the-book">Pushing the book</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -383,6 +393,19 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="programacion-avanzada">
 <h1>programacion-avanzada<a class="headerlink" href="#programacion-avanzada" title="Link to this heading">#</a></h1>
 <p>Versión pythonística del curso de programación avanzada.</p>
+<section id="pushing-the-book">
+<h2>Pushing the book<a class="headerlink" href="#pushing-the-book" title="Link to this heading">#</a></h2>
+<p>Agrego <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> al proyecto</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>add<span class="w"> </span>ghp-import
+</pre></div>
+</div>
+<p>Push a <code class="docutils literal notranslate"><span class="pre">clases-2025</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>-b<span class="w"> </span>clases-2025<span class="w"> </span>_build/html
+</pre></div>
+</div>
+<p>El libro se encuentra <a class="reference external" href="https://flavio.colavecchia.net/programacion-avanzada-clases/intro.html">acá</a>.</p>
+<p><a class="reference external" href="https://flavio.colavecchia.net/programacion-avanzada-clases/intro.html"><img alt="Jupyter Book Badge" src="https://jupyterbook.org/badge.svg" /></a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,6 +444,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-the-book">Pushing the book</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
