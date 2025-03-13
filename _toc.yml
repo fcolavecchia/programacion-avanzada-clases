@@ -3,7 +3,17 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: clases/markdown
-- file: clases/notebooks
-- file: clases/markdown-notebooks
+parts: 
+  - caption: Jupyter Books 
+    chapters:
+    - file: clases/markdown
+    - file: clases/notebooks
+    - file: clases/markdown-notebooks
+  - caption: Clase 1  
+    chapters:
+    - file: clases/1/Introd_python
+    - file: clases/1/Instala_y_uso
+    - file: clases/1/Ambientes
+  - caption: Ejercicios
+    chapters:
+    - file: clases/1/Ejercicios 

@@ -1,0 +1,1108 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introducción al lenguaje &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'clases/1/Instala_y_uso';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Ambientes" href="Ambientes.html" />
+    <link rel="prev" title="Conceptos básicos de Python" href="Introd_python.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter Books</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Clase 1</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introd_python.html">Conceptos básicos de Python</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción al lenguaje</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ambientes.html">Ambientes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ejercicios</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Ejercicios.html">Ejercicios 01</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/fcolavecchia/programacion-avanzada-clases/main?urlpath=lab/tree/docs/clases/1/Instala_y_uso.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/fcolavecchia/programacion-avanzada-clases/blob/main/docs/clases/1/Instala_y_uso.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/fcolavecchia/programacion-avanzada-clases" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/fcolavecchia/programacion-avanzada-clases/issues/new?title=Issue%20on%20page%20%2Fclases/1/Instala_y_uso.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/clases/1/Instala_y_uso.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introducción al lenguaje</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-empezar-instalacion-y-uso">Cómo empezar: Instalación y uso</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion">Instalación</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linux">Linux</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edicion-de-codigo">Edición de código</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-y-ayudas">Documentación y ayudas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uso-de-python-interactivo-o-no">Uso de Python: Interactivo o no</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces-interactivas-consolas-terminales-notebooks">Interfaces interactivas (consolas/terminales, notebooks)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#programas-scripts">Programas/scripts</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks-de-jupyter-o-jupyter-lab">Notebooks de Jupyter o Jupyter-Lab</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalando-python-interactivo">Instalando Python interactivo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-jupyter-o-ipython">Comandos de Jupyter (o IPython)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-navegacion">Comandos de Navegación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algunos-de-los-comandos-magicos">Algunos de los comandos mágicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-shell">Comandos de Shell</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-01-a">Ejercicios 01 (a)</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-al-lenguaje">
+<h1>Introducción al lenguaje<a class="headerlink" href="#introduccion-al-lenguaje" title="Link to this heading">#</a></h1>
+<section id="como-empezar-instalacion-y-uso">
+<h2>Cómo empezar: Instalación y uso<a class="headerlink" href="#como-empezar-instalacion-y-uso" title="Link to this heading">#</a></h2>
+<p><strong>Python</strong> es un lenguaje de programación interpretado, que se puede ejecutar sobre distintos sistemas operativos, es decir, es multiplataforma (suele usarse el término <em>cross-platform</em>). Además, la mayoría de los programas que existen (y posiblemente todos los que nosotros escribamos) pueden ejecutarse tanto en Linux como en windows y en Mac sin realizar ningún cambio.</p>
+<section id="instalacion">
+<h3>Instalación<a class="headerlink" href="#instalacion" title="Link to this heading">#</a></h3>
+<p>En este curso utilizaremos <strong>Python 3</strong>.</p>
+<blockquote>
+<div><p><strong>Nota:</strong> Existe una versión anterior de Python, <strong>Python2.X</strong> (Python 2) cuya fecha de finalización de soporte fue el 1/1/2020. Fue una una versión madura, estable, y con muchas aplicaciones, y utilidades disponibles, sin embargo ya no se desarrolla ni se corrigen los errores ni problemas de seguridad.</p>
+</div></blockquote>
+<p>La instalación <a class="reference external" href="https://www.python.org/downloads/">oficial</a> de Python provee lo necesario para utilizar el lenguaje. Sin embargo, con el correr del tiempo, se han creado otras <a class="reference external" href="https://wiki.python.org/moin/PythonDistributions">muchas distribuciones de Python</a> que incluyen aplicaciones y bibliotecas de uso común.</p>
+<blockquote>
+<div><p>Estas distribuciones son implementaciones del lenguaje basadas en CPython, es decir, en C y Python. Existen otras implementaciones, como por ejemplo <a class="reference external" href="https://pypy.org/index.html">PyPy</a>.</p>
+</div></blockquote>
+<p>Para una instalación fácil de Python y los paquetes más comunes se pueden usar alguna de las distribuciones:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.anaconda.com/distribution">Anaconda</a>.   (Linux, Windows, MacOs)</p></li>
+<li><p><a class="reference external" href="https://www.activestate.com/products/python/">ActiveState</a></p></li>
+<li><p><a class="reference external" href="https://winpython.github.io/">Winpython</a>.  (Windows)</p></li>
+</ul>
+<p>En este curso utilizaremos Anaconda, en su versión minimalista, <a class="reference external" href="https://docs.anaconda.com/miniconda/">miniconda</a>. La diferencia más importante es la cantidad de paquetes que instala cada distribución inicialmente. Además, Anaconda provee una aplicación (Anaconda Navigator) para el manejo de paquetes.</p>
+<blockquote>
+<div><p>En el curso el manejo de paquetes se realizará mediante la línea de comando y los <em>ambientes</em> de Python.</p>
+</div></blockquote>
+<section id="linux">
+<h4>Linux<a class="headerlink" href="#linux" title="Link to this heading">#</a></h4>
+<p>En la terminal,</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/miniconda3
+wget<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>-O<span class="w"> </span>~/miniconda3/miniconda.sh
+bash<span class="w"> </span>~/miniconda3/miniconda.sh<span class="w"> </span>-b<span class="w"> </span>-u<span class="w"> </span>-p<span class="w"> </span>~/miniconda3
+rm<span class="w"> </span>~/miniconda3/miniconda.sh
+</pre></div>
+</div>
+<p>Eventualmente, en linux se podría instalar directamente todo lo necesario desde los repositorios. Por ejemplo en Ubuntu:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ipython3<span class="w"> </span>ipython3-notebook<span class="w"> </span>spyder<span class="w"> </span>python3-matplotlib<span class="w"> </span>python3-numpy<span class="w"> </span>python3-scipy
+</pre></div>
+</div>
+<p>o, en Fedora 28, en adelante:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>python3-ipython<span class="w"> </span>python3-notebook<span class="w"> </span>python3-matplotlib<span class="w"> </span>python3-numpy<span class="w"> </span>python3-scipy
+</pre></div>
+</div>
+<p>Obviamente esto tiene un alcance global para todos los usuarios. Dependiendo de los casos de uso, será útil una u otra opción.</p>
+</section>
+<section id="windows">
+<h4>Windows<a class="headerlink" href="#windows" title="Link to this heading">#</a></h4>
+<p>La instalación es bastante sencilla, bajando el instalador <a class="reference external" href="https://docs.anaconda.com/miniconda/">acá</a> o usando <code class="docutils literal notranslate"><span class="pre">curl</span></code>:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
+start /wait &quot;&quot; .\miniconda.exe /S
+del miniconda.exe
+</pre></div>
+</div>
+<blockquote>
+<div><p>Atención! Pueden existir problemas si el nombre del usuario en Windows contiene espacios.</p>
+</div></blockquote>
+<p>Una vez instalado miniconda, veremos dos nuevos acceso directos en el menú</p>
+<p><img alt="" src="../../_images/miniconda.png" /></p>
+<p>que corresponden a los dos tipos de terminales que instala miniconda.</p>
+<blockquote>
+<div><p>Por defecto, miniconda no agrega Python al PATH, por lo tanto, <code class="docutils literal notranslate"><span class="pre">python</span></code> no estará disponible en las terminales usuales (<code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> y PowerShell)</p>
+</div></blockquote>
+</section>
+</section>
+<section id="edicion-de-codigo">
+<h3>Edición de código<a class="headerlink" href="#edicion-de-codigo" title="Link to this heading">#</a></h3>
+<p>Como todo lenguaje, se pueden utilizar distintos editores de texto</p>
+<ul class="simple">
+<li><p>En windows: <a class="reference external" href="https://notepad-plus-plus.org">Notepad++</a>, <a class="reference external" href="http://www.jedit.org/">Jedit</a>, … (no Notepad o Wordpad)</p></li>
+<li><p>En Linux: cualquier editor de texto (gedit, geany, kate, nano, emacs, vim, …)</p></li>
+<li><p>En Mac: TextEdit funciona, sino TextWrangler, <a class="reference external" href="http://www.jedit.org/">JEdit</a>, …</p></li>
+</ul>
+<p>o IDEs:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/spyder-ide/spyder/">Spyder</a>. (IDE - También viene con Anaconda, y con Python(x,y)).</p></li>
+<li><p><a class="reference external" href="https://www.jetbrains.com/pycharm/">Pycharm</a>. (IDE, una versión comercial y una libre, ambos con muchas funcionalidades)</p></li>
+<li><p><a class="reference external" href="https://www.sublimetext.com/">Sublime Text</a></p></li>
+<li><p><a class="reference external" href="https://ninja-ide.org/">Ninja-IDE</a> (IDE <em>cross-platform</em>, libre)</p></li>
+</ul>
+<p>y, por supuesto, <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>. Todos estos editores ofrecen plugins o extensiones para mejorar la experiencia de programación.</p>
+</section>
+<section id="documentacion-y-ayudas">
+<h3>Documentación y ayudas<a class="headerlink" href="#documentacion-y-ayudas" title="Link to this heading">#</a></h3>
+<p>Algunas fuentes de ayuda <em>constante</em> son:</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.python.org/3/">La documentación oficial de Python</a></p></li>
+<li><p>En particular el <a class="reference external" href="https://docs.python.org/3/tutorial/">Tutorial</a>, también <a class="reference external" href="http://docs.python.org.ar/tutorial/3/">en español</a> y la <a class="reference external" href="https://docs.python.org/3/reference/index.html">referencia de bibliotecas</a></p></li>
+<li><p>En una terminal, puede obtener información sobre un paquete con <code class="docutils literal notranslate"><span class="pre">pydoc</span> <span class="pre">&lt;comando&gt;</span></code></p></li>
+<li><p>En una consola interactiva de <strong>Python</strong>, mediante <code class="docutils literal notranslate"><span class="pre">help(&lt;comando&gt;)</span></code></p></li>
+<li><p>La documentación de los paquetes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://docs.scipy.org/doc/numpy/user/">Numpy</a></p></li>
+<li><p><a class="reference external" href="http://matplotlib.org">Matplotlib</a>, en particular la <a class="reference external" href="http://matplotlib.org/gallery.html">galería</a></p></li>
+<li><p><a class="reference external" href="http://docs.scipy.org/doc/scipy/reference/">Scipy</a></p></li>
+<li><p><a class="reference external" href="https://pandas.pydata.org/">Pandas</a></p></li>
+</ul>
+<p>etc.</p>
+</li>
+<li><p>Buscar “palabras clave + python” en un buscador. Es particularmente útil el sitio <a class="reference external" href="http://stackoverflow.com/">stackoverflow</a></p></li>
+</ul>
+<blockquote>
+<div><p>Python es un lenguaje de tipos dinámicos, con lo cual las ayudas de los IDE pueden ser en general escasas. Veremos sin embargo en el curso algunas alternativas para poder mejorar la experiencia de programación.</p>
+</div></blockquote>
+</section>
+<section id="uso-de-python-interactivo-o-no">
+<h3>Uso de Python: Interactivo o no<a class="headerlink" href="#uso-de-python-interactivo-o-no" title="Link to this heading">#</a></h3>
+<section id="interfaces-interactivas-consolas-terminales-notebooks">
+<h4>Interfaces interactivas (consolas/terminales, notebooks)<a class="headerlink" href="#interfaces-interactivas-consolas-terminales-notebooks" title="Link to this heading">#</a></h4>
+<p>Hay muchas maneras de usar el lenguaje Python.  Es un lenguaje <strong>interpretado</strong> e <strong>interactivo</strong>. Si ejecutamos la consola (<code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> en windows) y luego <code class="docutils literal notranslate"><span class="pre">python</span></code>, se abrirá la consola interactiva</p>
+<p><img alt="" src="clases/1/figuras/console.png" /></p>
+<p>En la consola interactiva podemos escribir sentencias o pequeños bloques de código que son ejecutados inmediatamente. Pero <em>la consola interactiva</em> estándar no tiene tantas características de conveniencia como otras, por ejemplo <strong>IPython</strong> que viene con “accesorios de <em>comfort</em>”.</p>
+<p><img alt="" src="../../_images/ipython.png" /></p>
+<p>La consola IPython supera a la estándar en muchos sentidos. Podemos autocompletar (<code class="docutils literal notranslate"><span class="pre">&lt;TAB&gt;</span></code>), ver ayuda rápida de cualquier objeto (<code class="docutils literal notranslate"><span class="pre">?</span></code>), etc.</p>
+</section>
+<section id="programas-scripts">
+<h4>Programas/scripts<a class="headerlink" href="#programas-scripts" title="Link to this heading">#</a></h4>
+<p>Una forma muy común/poderosa de usar Python es en forma <em>no interactiva</em>, escribiendo <em>programas</em> o <em>scripts</em>. Esto es, escribir nuestro código en un archivo con extensión <em>.py</em> para luego ejecutarlo con el intérprete. Por ejemplo, podemos crear un archivo <em><a class="reference external" href="http://hello.py">hello.py</a></em> (al que se le llama <em>módulo</em>) con este contenido:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(&quot;Hola Mundo!&quot;)
+</pre></div>
+</div>
+<p>Si ejecutamos <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">hello.py</span></code> o <code class="docutils literal notranslate"><span class="pre">ipython</span> <span class="pre">hello.py</span></code> se ejecutará el interprete Python y obtendremos el resultado esperado (impresión por pantalla de “Hola Mundo!”, sin las comillas)</p>
+<p><strong>Python</strong> no exige un editor específico y hay muchos modos y maneras de programar. Lo que es importante al programar en <strong>Python</strong> es que la <em>indentación</em> define los bloques (definición de loops, if/else, funciones, clases, etc). Por esa razón es importante que el tabulado no mezcle espacios con caracteres específicos de tabulación. La manera que recomendaría es usar siempre espacios (uno usa la tecla [TAB] pero el editor lo traduce a un número determinado de espacios).
+La indentación recomendada es de <strong>4</strong> espacios (pero van a notar que yo uso <strong>2</strong>).</p>
+<p>Un buen editor es <strong>Spyder</strong> que tiene características de IDE (entorno integrado: editor + ayuda + consola interactiva).</p>
+<p><img alt="" src="../../_images/spyder.png" /></p>
+<p>También Pycharm funciona muy bien</p>
+<p><img alt="" src="../../_images/pycharm.jpg" /></p>
+<p>Y por supuesto, VS Code</p>
+<p><img alt="" src="../../_images/vscode.png" /></p>
+<p>En todos los casos se puede ejecutar todo el código del archivo en la consola interactiva que incluye. Alternativamente, también se puede seleccionar <strong>sólo</strong> una porción del código para ejecutar.</p>
+</section>
+</section>
+<section id="notebooks-de-jupyter-o-jupyter-lab">
+<h3>Notebooks de Jupyter o Jupyter-Lab<a class="headerlink" href="#notebooks-de-jupyter-o-jupyter-lab" title="Link to this heading">#</a></h3>
+<p>Para trabajar en forma interactiva es muy útil usar los <em>Notebooks</em> de Jupyter. El notebook es un entorno interactivo enriquecido. Podemos crear y editar “celdas” código Python que se pueden editar y volver a ejecutar, se pueden intercalar celdas de texto, fórmulas matemáticas, y hacer que los gráficos se muestren inscrutados en la misma pantalla o en ventanas separadas. Además se puede escribir texto con formato (como este que estamos viendo) con secciones, títulos.
+Estos archivos se guardan con extensión <em>.ipynb</em>, que pueden exportarse en distintos formatos tales como html (estáticos), en formato PDF, LaTeX, o como código python puro. (.py)</p>
+</section>
+<section id="instalando-python-interactivo">
+<h3>Instalando Python interactivo<a class="headerlink" href="#instalando-python-interactivo" title="Link to this heading">#</a></h3>
+<p>Miniconda instala algunos paquetes básicos, con lo cual tenemos que ir agregándolos. Primero instalaremos <code class="docutils literal notranslate"><span class="pre">IPython</span></code>, la consola interactiva de Python. Para eso utilizamos el comando <code class="docutils literal notranslate"><span class="pre">conda</span></code>. Desde cualquiera de las terminales de Anaconda instaladas:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>conda install ipython
+</pre></div>
+</div>
+<p>Y luego instalaremos la versión más sofisticada de Python interactivo, a través de Jupyter:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>conda install jupyter
+</pre></div>
+</div>
+<p>Y obtendremos</p>
+<p><img alt="" src="../../_images/jupyter.png" /></p>
+<p>Para usar los notebooks, simplemente cliqueamos en el nuevo acceso directo a Jupyter Notebooks, o desde la terminal de Anaconda:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>python -m notebook
+</pre></div>
+</div>
+<p>Existe una versión más moderna de Jupyter notebooks denominada <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/index.html">JupyterLab</a> que puede instalarse como:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyterlab
+</pre></div>
+</div>
+<p>Una vez instalada, podemos correrla con</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>desde una terminal de Anaconda.</p>
+</section>
+</section>
+<section id="comandos-de-jupyter-o-ipython">
+<h2>Comandos de Jupyter (o IPython)<a class="headerlink" href="#comandos-de-jupyter-o-ipython" title="Link to this heading">#</a></h2>
+<section id="comandos-de-navegacion">
+<h3>Comandos de Navegación<a class="headerlink" href="#comandos-de-navegacion" title="Link to this heading">#</a></h3>
+<p>Jupyter conoce varios de los comandos más comunes del sistema operativo. En Jupyter (o en la terminal de Python) estos comandos funcionan independientemente del sistema operativo (sí, incluso en windows, con algunos <em>detalles</em>). Estos se conocen con el nombre de <strong>comandos mágicos</strong> y comienzan con el signo porcentaje <code class="docutils literal notranslate"><span class="pre">%</span></code>. Para obtener una lista de los comandos usamos <code class="docutils literal notranslate"><span class="pre">%lsmagic</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Más util en IPhyton que en Jupyter</span>
+<span class="o">%</span><span class="k">lsmagic</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Available line magics:
+%alias  %alias_magic  %autoawait  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %code_wrap  %colors  %conda  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %mamba  %man  %matplotlib  %micromamba  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %uv  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%code_wrap  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">magic</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="algunos-de-los-comandos-magicos">
+<h3>Algunos de los comandos mágicos<a class="headerlink" href="#algunos-de-los-comandos-magicos" title="Link to this heading">#</a></h3>
+<p>Algunos de los comandos mágicos más importantes son:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">%cd</span></code> <em>direct</em>     (Nos ubica en la carpeta direct)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%ls</span></code>              (muestra un listado del directorio)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%pwd</span></code>             (muestra el directorio donde estamos trabajando)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%run</span></code> <em>filename</em>  (corre un dado programa)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%hist</span></code>            (muestra la historia de comandos utilizados)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%mkdir</span></code> <em>dname</em>    (crea un directorio llamado dname)</p></li>
+<li><p>Tab completion:
+Apretando [TAB] completa los comandos o nombres de archivos.</p></li>
+</ul>
+<p>En la consola de IPython tipee <code class="docutils literal notranslate"><span class="pre">%cd</span> <span class="pre">~</span></code> (<em>i.e.</em> “<code class="docutils literal notranslate"><span class="pre">%cd</span></code>” – “espacio” – “tilde”, y luego presione [RETURN]. Esto nos pone en el directorio HOME (default).</p>
+<p>Después tipee <code class="docutils literal notranslate"><span class="pre">%pwd</span></code> (<b>p</b>rint <b>w</b>orking <b>d</b>irectory) y presione [RETURN] para ver en qué directorio estamos:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">pwd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/Users/flavioc/Codes/GitHub/programacion-avanzada/docs/clases/1&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> ~
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/flavioc
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">pwd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/Users/flavioc&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>En windows, el comando <code class="docutils literal notranslate"><span class="pre">pwd</span></code> va a dar algo así como:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>In [3]: %pwd
+Out[3]: C:\\Users\\usuario
+</pre></div>
+</div>
+<p>Vamos a crear un directorio donde guardar ahora los programas de ejemplo que escribamos. Lo vamos a llamar <code class="docutils literal notranslate"><span class="pre">scripts</span></code>.</p>
+<p>Primero vamos a ir al directorio que queremos, y crearlo. En mi caso lo voy a crear en mi HOME.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/flavioc
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">mkdir</span> scripts
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mkdir: scripts: File exists
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> scripts
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/flavioc/scripts
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">hist</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># Más util en IPhyton que en Jupyter
+%lsmagic
+%magic
+%pwd
+%cd ~
+%pwd
+%cd
+%mkdir scripts
+%cd scripts
+%hist
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hay varios otros comandos mágicos en IPython. Para leer información sobre el sistema de comandos mágicos utilice:</p>
+<p>Finalmente, para obtener un resumen de comandos con una explicación breve, utilice:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">quickref</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="comandos-de-shell">
+<h3>Comandos de Shell<a class="headerlink" href="#comandos-de-shell" title="Link to this heading">#</a></h3>
+<p>Se pueden correr comandos del sistema operativo tipeando <code class="docutils literal notranslate"><span class="pre">!</span></code> seguido por el comando que se quiere ejecutar. Por ejemplo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># En Linux</span>
+<span class="c1"># !ls</span>
+<span class="c1"># En Windows</span>
+<span class="o">!</span>dir
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>zsh:1: command not found: dir
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vamos a escribir un programa de Python con comandos:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;1+2&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>prog1.py
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;print(&#39;hola otra vez&#39;)&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>prog1.py
+</pre></div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><p>Notar que en Windows, el comando no requiere las comillas (“):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!echo 1+2 &gt;&gt; prog1.py
+!echo print(&#39;hola otra vez&#39;) &gt;&gt; prog1.py
+</pre></div>
+</div>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># En Windows</span>
+<span class="o">!</span><span class="nb">echo</span><span class="w"> </span><span class="m">1</span>+2<span class="w"> </span>&gt;&gt;<span class="w"> </span>prog1.py
+<span class="o">!</span><span class="nb">echo</span><span class="w"> </span>print<span class="o">(</span><span class="s1">&#39;hola otra vez&#39;</span><span class="o">)</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>prog1.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>zsh:1: unknown file attribute: h
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cat</span> prog1.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1+2
+print(&#39;hola otra vez&#39;)
+1+2
+1+2
+print(&#39;hola otra vez&#39;)
+1+2
+1+2
+print(&#39;hola otra vez&#39;)
+1+2
+</pre></div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><p>En windows <code class="docutils literal notranslate"><span class="pre">%cat</span></code> no está implementado, así que se debe usar directamente el comando de la terminal <code class="docutils literal notranslate"><span class="pre">!type</span></code></p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="nb">type</span><span class="w"> </span>prog1.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>prog1.py not found
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">run</span> prog1.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hola otra vez
+hola otra vez
+hola otra vez
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>date
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Thu Mar 13 16:03:40 -03 2025
+</pre></div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><p>En windows, <code class="docutils literal notranslate"><span class="pre">!date</span></code> imprime la fecha y hora, pero espera una nueva fecha, con lo cual la ejecución del comando terminará cuando uno detenga la ejecución de la celda</p>
+</div></blockquote>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ejercicios-01-a">
+<h2>Ejercicios 01 (a)<a class="headerlink" href="#ejercicios-01-a" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Abra una terminal (consola) o notebook y utilícela como una calculadora para realizar las siguientes acciones:</p>
+<ul class="simple">
+<li><p>Suponiendo que, de las tres horas de clases, dedicamos dos períodos de media hora para que realicen ejercicios (de Python), dedicamos diez minutos a distraernos en un recreo, y el resto a la exposición ‘teórica’, calcular cuántos minutos efectivos de trabajo tendremos en las 13 clases.</p></li>
+<li><p>Calcule el porcentaje de horas del curso efectivamente dedicadas al trabajo.</p></li>
+<li><p>¿Cómo se modifica el porcentaje anterior si incluimos el examen final?</p></li>
+<li><p>Para la cantidad de alumnos presentes en el aula: ¿cuántas horas-persona de trabajo hay involucradas en este curso?</p></li>
+</ul>
+</li>
+<li><p>Muestre en la consola de Ipython (o usando Jupyter Notebooks):</p>
+<ul class="simple">
+<li><p>el nombre de su directorio actual</p></li>
+<li><p>los archivos en su directorio actual</p></li>
+<li><p>Cree un subdirectorio llamado <code class="docutils literal notranslate"><span class="pre">tmp</span></code></p></li>
+<li><p>si está usando Linux, muestre la fecha y hora</p></li>
+<li><p>Borre el subdirectorio <code class="docutils literal notranslate"><span class="pre">tmp</span></code></p></li>
+</ul>
+</li>
+<li><p>Sabiendo que la velocidad de la luz es aproximadamente 300000 km/s y que un año luz se define como la distancia que recorre la luz en un año, usando la terminal de python o la notebook:</p></li>
+</ol>
+<ul class="simple">
+<li><p>calcule cuántos kilómetros son nueve meses-luz,</p></li>
+<li><p>considerando que la luz del sol tarda ocho minutos en llegar a la tierra, calcule a cuántos metros de la tierra está el sol.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "fcolavecchia/programacion-avanzada-clases",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./clases/1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Introd_python.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Conceptos básicos de Python</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Ambientes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ambientes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-empezar-instalacion-y-uso">Cómo empezar: Instalación y uso</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion">Instalación</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linux">Linux</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edicion-de-codigo">Edición de código</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-y-ayudas">Documentación y ayudas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uso-de-python-interactivo-o-no">Uso de Python: Interactivo o no</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces-interactivas-consolas-terminales-notebooks">Interfaces interactivas (consolas/terminales, notebooks)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#programas-scripts">Programas/scripts</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks-de-jupyter-o-jupyter-lab">Notebooks de Jupyter o Jupyter-Lab</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalando-python-interactivo">Instalando Python interactivo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-jupyter-o-ipython">Comandos de Jupyter (o IPython)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-navegacion">Comandos de Navegación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algunos-de-los-comandos-magicos">Algunos de los comandos mágicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-de-shell">Comandos de Shell</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-01-a">Ejercicios 01 (a)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
