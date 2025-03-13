@@ -24,3 +24,9 @@ El libro se encuentra [acá]().
 ```bash
 uv run jupyter-book clean .
 ```
+
+## Knowledge Base
+
+- Pygment lexer no reconoce `cmd` como un lexer válido para colorear código correspondiente
+  al `cmd.exe` de windows. En su lugar, usar `batch`.
+  

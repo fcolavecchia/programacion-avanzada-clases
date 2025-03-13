@@ -41,4 +41,4 @@ html:
   use_repository_button: true
 
 
-exclude_patterns: ['.venv']  
+exclude_patterns: ['.venv', 'README.md']  
